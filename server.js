@@ -23,8 +23,8 @@ app.get('/hello', function(req, res){
 
 app.post("/api/fileanalyse", upload.single("upfile"), (req,res)=>{
   var buff = req.file;
-  console.log(buff);
-  console.log(req.body);
+  //console.log(buff);
+  //console.log(req.body);
   if (buff){
     var name = buff.originalname;
     var size = buff.size;
